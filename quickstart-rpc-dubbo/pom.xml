@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<parent>
+		<groupId>org.quickstart</groupId>
+		<artifactId>quickstart-rpc</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath> <!-- lookup parent from repository -->
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>quickstart-rpc-dubbo</artifactId>
+	<packaging>jar</packaging>
+	<name>${project.artifactId}-${project.version}</name>
+	<description>Demo project for XXX</description>
+
+	<properties>
+		<dubbo.version>2.6.0</dubbo.version>
+		<curator.version>4.0.1</curator.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.101tec</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-client</artifactId>
+			<version>${curator.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-framework</artifactId>
+			<version>${curator.version}</version>
+		</dependency>
+
+	</dependencies>
+</project>
