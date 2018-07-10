@@ -24,15 +24,15 @@
 	</dependencies>
 
 	<modules>
-		<module>quickstart-rpc-dubbo</module>
-		<module>quickstart-rpc-grpc</module>
-		<module>quickstart-rpc-motan</module>
-		<module>quickstart-rpc-simple</module>
-		<module>quickstart-rpc-thrift</module>
-		<module>quickstart-rpc-finagle</module>
-		<module>quickstart-rpc-jupiter</module>
-		<module>quickstart-rpc-tars</module>
-		<module>quickstart-rpc-hsf</module>
+		<module>quickstart-dubbo</module>
+		<module>quickstart-grpc</module>
+		<module>quickstart-motan</module>
+		<module>quickstart-simple</module>
+		<module>quickstart-thrift</module>
+		<module>quickstart-finagle</module>
+		<module>quickstart-jupiter</module>
+		<module>quickstart-tars</module>
+		<module>quickstart-hsf</module>
 	</modules>
 
 </project>

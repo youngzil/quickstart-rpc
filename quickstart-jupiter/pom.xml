@@ -3,24 +3,28 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.quickstart</groupId>
 		<artifactId>quickstart-rpc</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>..</relativePath> <!-- lookup parent from repository -->
 	</parent>
-
-	<modelVersion>4.0.0</modelVersion>
-	<artifactId>quickstart-rpc-motan</artifactId>
-	<packaging>jar</packaging>
-	<name>${project.artifactId}-${project.version}</name>
-	<description>Demo project for XXX</description>
-
+	<groupId>org.quickstart</groupId>
+	<artifactId>quickstart-jupiter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>quickstart-rpc-jupiter</name>
+	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jupiter.version>1.2.21</jupiter.version>
 	</properties>
-
 	<dependencies>
-	</dependencies>
 
+		<dependency>
+			<groupId>org.jupiter-rpc</groupId>
+			<artifactId>jupiter-all</artifactId>
+			<version>${jupiter.version}</version>
+		</dependency>
+
+	</dependencies>
 </project>

@@ -10,7 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.quickstart</groupId>
-	<artifactId>quickstart-rpc-finagle</artifactId>
+	<artifactId>quickstart-finagle</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>quickstart-rpc-finagle</name>
 	<url>http://maven.apache.org</url>

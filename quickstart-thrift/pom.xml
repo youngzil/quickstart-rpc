@@ -10,7 +10,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>org.quickstart</groupId>
-	<artifactId>quickstart-rpc-thrift</artifactId>
+	<artifactId>quickstart-thrift</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>quickstart-rpc-thrift</name>
 	<url>http://maven.apache.org</url>
