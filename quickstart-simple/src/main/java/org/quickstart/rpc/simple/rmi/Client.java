@@ -30,6 +30,8 @@ import javax.naming.InitialContext;
 public class Client {
 
     public static void main(String[] args) {
+
+
         try {
             // 注册管理器
             // 获取服务注册管理器
