@@ -3,7 +3,7 @@
  * 文件名：RpcBootstrap.java
  * 版本信息：
  * 日期：2018年4月24日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.simple.example.server;
@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *  
  *  http://www.importnew.com/20327.html
  *  
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年4月24日 下午12:24:57 
  * @since 1.0
  */

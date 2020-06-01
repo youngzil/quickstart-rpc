@@ -3,7 +3,7 @@
  * 文件名：Client.java
  * 版本信息：
  * 日期：2018年5月25日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.simple.rmi;
@@ -22,7 +22,7 @@ import javax.naming.InitialContext;
 /**
  * Client
  * 
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年5月25日 下午11:33:21
  * @since 1.0
  */

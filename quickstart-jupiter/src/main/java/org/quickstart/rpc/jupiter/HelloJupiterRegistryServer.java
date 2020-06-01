@@ -3,7 +3,7 @@
  * 文件名：HelloJupiterRegistryServer.java
  * 版本信息：
  * 日期：2018年5月27日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.jupiter;
@@ -13,7 +13,7 @@ import org.jupiter.registry.RegistryServer;
 /**
  * HelloJupiterRegistryServer 
  *  
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年5月27日 上午9:20:03 
  * @since 1.0
  */

@@ -3,7 +3,7 @@
  * 文件名：RpcDecoder.java
  * 版本信息：
  * 日期：2018年4月24日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.simple.self.example.util;
@@ -17,7 +17,7 @@ import io.netty.handler.codec.ByteToMessageDecoder;
 /**
  * RpcDecoder 
  *  
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年4月24日 下午12:41:51 
  * @since 1.0
  */

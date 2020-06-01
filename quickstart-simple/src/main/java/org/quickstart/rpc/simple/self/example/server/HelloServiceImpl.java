@@ -3,7 +3,7 @@
  * 文件名：HelloServiceImpl.java
  * 版本信息：
  * 日期：2018年4月24日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.simple.self.example.server;
@@ -14,7 +14,7 @@ import org.quickstart.rpc.simple.self.example.common.RpcService;
 /**
  * HelloServiceImpl 
  *  
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年4月24日 上午11:17:38 
  * @since 1.0
  */

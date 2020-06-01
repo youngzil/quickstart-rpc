@@ -11,14 +11,7 @@ Daemon Thread [New I/O server worker #1-5] (Suspended (breakpoint at line 60 in 
 	DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(ChannelEvent) line: 783	
 	Channels.fireMessageReceived(ChannelHandlerContext, Object, SocketAddress) line: 302	
 	NettyCodecAdapter$InternalDecoder.messageReceived(ChannelHandlerContext, MessageEvent) line: 147	
-	NettyCodecAdapter$InternalDecoder(SimpleChannelUpstreamHandler).handleUpstream(ChannelHandlerContext, ChannelEvent) line: 80	
-	DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline$DefaultChannelHandlerContext, ChannelEvent) line: 564	
-	DefaultChannelPipeline.sendUpstream(ChannelEvent) line: 559	
-	Channels.fireMessageReceived(Channel, Object, SocketAddress) line: 274	
-	Channels.fireMessageReceived(Channel, Object) line: 261	
-	NioWorker.read(SelectionKey) line: 349	
-	NioWorker.processSelectedKeys(Set<SelectionKey>) line: 280	
-	NioWorker.run() line: 200	
+	
 	ThreadRenamingRunnable.run() line: 108	
 	DeadLockProofWorker$1.run() line: 44	
 	ThreadPoolExecutor.runWorker(ThreadPoolExecutor$Worker) line: 1149	

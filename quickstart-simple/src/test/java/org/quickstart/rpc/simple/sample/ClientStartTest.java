@@ -3,7 +3,7 @@
  * 文件名：RpcTest.java
  * 版本信息：
  * 日期：2018年4月24日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.simple.sample;
@@ -20,7 +20,7 @@ import org.quickstart.rpc.simple.self.sample.server.RpcExporter;
  * 
  * https://www.cnblogs.com/ChrisMurphy/p/6550184.html
  * 
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年4月24日 上午11:05:37
  * @since 1.0
  */

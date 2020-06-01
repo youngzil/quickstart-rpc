@@ -3,7 +3,7 @@
  * 文件名：ServiceImpl.java
  * 版本信息：
  * 日期：2018年5月27日
- * Copyright asiainfo Corporation 2018
+ * Copyright youngzil Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.rpc.jupiter.service;
@@ -13,7 +13,7 @@ import org.jupiter.rpc.ServiceProviderImpl;
 /**
  * ServiceImpl 
  *  
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年5月27日 上午9:18:56 
  * @since 1.0
  */
