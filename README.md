@@ -1,6 +1,4 @@
-项目地址
-https://github.com/youngzil/quickstart-rpc
-
+[项目地址](https://github.com/youngzil/quickstart-rpc)
 
 
 RPC（Remote Procedure Call）—远程过程调用
@@ -21,6 +19,10 @@ brpc
 
 
 
+
+
+RPC和socket的区别
+https://blog.csdn.net/u012414189/article/details/84256310
 
 
 

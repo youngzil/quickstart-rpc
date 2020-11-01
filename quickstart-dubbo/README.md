@@ -1,14 +1,13 @@
-1、网址：
-http://dubbo.io/
-https://dubbo.apache.org/en-us/
+Dubbo
 
+[Dubbo官网](https://dubbo.apache.org/en-us/)  
+[Dubbo Github](https://github.com/apache/dubbo)  
+[Dubbo 交流聊天室Gitter](https://gitter.im/alibaba/dubbo)  
 
-https://github.com/alibaba/dubbo
+[Dubbo介绍](http://www.oschina.net/p/dubbo)  
+[Dubbo学习文档](https://dubbo.gitbooks.io/dubbo-user-book/)  
+[dubbo服务管理以及监控系统](https://github.com/dubboclub/dubbokeeper)  
 
-https://dubbo.gitbooks.io/dubbo-user-book/
-https://gitter.im/alibaba/dubbo
-
-https://github.com/dubboclub/dubbokeeper
 
 
 学习网址：
@@ -19,8 +18,7 @@ http://blog.csdn.net/flashflight/article/details/43939275
 https://blog.csdn.net/sucess_zhang/article/details/78839790
 https://blog.csdn.net/frankchina/article/category/6224443
 
-http://www.oschina.net/p/dubbo
-https://gitee.com/mirrors/dubbo
+
 
 Dubbo 详细介绍
 Dubbo 是阿里巴巴公司开源的一个高性能优秀的服务框架，使得应用可通过高性能的 RPC 实现服务的输出和输入功能，可以和 Spring 框架无缝集成。
