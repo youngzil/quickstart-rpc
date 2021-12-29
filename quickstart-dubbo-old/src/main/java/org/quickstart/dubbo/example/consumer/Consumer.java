@@ -6,9 +6,9 @@
  * Copyright youngzil Corporation 2017
  * 版权所有 *
  */
-package org.quickstart.dubbo.alibaba.example.consumer;
+package org.quickstart.dubbo.example.consumer;
 
-import org.quickstart.dubbo.alibaba.example.api.DemoService;
+import org.quickstart.dubbo.example.api.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

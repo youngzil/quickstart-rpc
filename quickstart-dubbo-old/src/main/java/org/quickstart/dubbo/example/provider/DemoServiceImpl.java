@@ -6,9 +6,9 @@
  * Copyright youngzil Corporation 2017
  * 版权所有 *
  */
-package org.quickstart.dubbo.alibaba.example.provider;
+package org.quickstart.dubbo.example.provider;
 
-import org.quickstart.dubbo.alibaba.example.api.DemoService;
+import org.quickstart.dubbo.example.api.DemoService;
 
 /**
  * DemoServiceImpl
@@ -18,6 +18,7 @@ import org.quickstart.dubbo.alibaba.example.api.DemoService;
  * @since 1.0
  */
 public class DemoServiceImpl implements DemoService {
+    @Override
     public String sayHello(String name) {
         return "Hello " + name;
     }

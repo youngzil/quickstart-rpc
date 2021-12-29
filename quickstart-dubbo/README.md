@@ -1,6 +1,6 @@
 Dubbo
 
-[Dubbo官网](https://dubbo.apache.org/en-us/)  
+[Dubbo官网](https://dubbo.apache.org/zh/)  
 [Dubbo Github](https://github.com/apache/dubbo)  
 [Dubbo 交流聊天室Gitter](https://gitter.im/alibaba/dubbo)  
 

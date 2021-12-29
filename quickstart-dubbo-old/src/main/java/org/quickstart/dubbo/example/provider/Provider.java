@@ -6,7 +6,7 @@
  * Copyright youngzil Corporation 2017
  * 版权所有 *
  */
-package org.quickstart.dubbo.alibaba.example.provider;
+package org.quickstart.dubbo.example.provider;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
