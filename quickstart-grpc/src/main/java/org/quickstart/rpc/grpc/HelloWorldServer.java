@@ -1,5 +1,5 @@
 /**
- * 项目名称：quickstart-rpc-grpc 
+ * 项目名称：quickstart-rpc-grpc
  * 文件名：HelloWorldServer.java
  * 版本信息：
  * 日期：2018年5月26日
@@ -8,15 +8,16 @@
  */
 package org.quickstart.rpc.grpc;
 
-import java.io.IOException;
-
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
 
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 /**
  * HelloWorldServer
- * 
+ *
  * @author：youngzil@163.com
  * @2018年5月26日 上午10:44:08
  * @since 1.0
@@ -30,23 +31,23 @@ public class HelloWorldServer {
     private void start() throws IOException {
         server = ServerBuilder.forPort(port).addService(new GreeterImpl()).build().start();
 
-        System.out.println("service start...");
+        System.out.println("Server started, listening on " + port);
 
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-
-            @Override
-            public void run() {
-
-                System.err.println("*** shutting down gRPC server since JVM is shutting down");
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            System.err.println("*** shutting down gRPC server since JVM is shutting down");
+            try {
                 HelloWorldServer.this.stop();
-                System.err.println("*** server shut down");
+            } catch (InterruptedException e) {
+                e.printStackTrace(System.err);
             }
-        });
+            System.err.println("*** server shut down");
+        }));
     }
 
-    private void stop() {
+    private void stop() throws InterruptedException {
         if (server != null) {
-            server.shutdown();
+            // server.shutdown();
+            server.shutdown().awaitTermination(30, TimeUnit.SECONDS);
         }
     }
 
@@ -67,11 +68,14 @@ public class HelloWorldServer {
     // 实现 定义一个实现服务接口的类
     private class GreeterImpl extends GreeterGrpc.GreeterImplBase {
 
+        @Override
         public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
             System.out.println("service:" + req.getName());
             HelloReply reply = HelloReply.newBuilder().setMessage(("Hello: " + req.getName())).build();
             responseObserver.onNext(reply);
             responseObserver.onCompleted();
+            System.out.println("Message from gRPC-Client:" + req.getName());
+            System.out.println("Message Response:" + reply.getMessage());
         }
     }
 }

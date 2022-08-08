@@ -1,35 +1,40 @@
 <?xml version="1.0"?>
 <project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.quickstart</groupId>
-		<artifactId>quickstart-rpc</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<groupId>org.quickstart</groupId>
-	<artifactId>quickstart-thrift</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>quickstart-rpc-thrift</name>
-	<url>http://maven.apache.org</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-	<dependencies>
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-		<dependency>
-			<groupId>org.apache.thrift</groupId>
-			<artifactId>libthrift</artifactId>
-			<version>0.14.2</version>
-<!-- 			<type>pom</type> -->
-		</dependency>
+    <parent>
+        <groupId>org.quickstart</groupId>
+        <artifactId>quickstart-rpc</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-		</dependency>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>quickstart-thrift</artifactId>
+    <packaging>jar</packaging>
+    <name>quickstart-rpc-thrift</name>
+    <url>http://maven.apache.org</url>
+    <name>${project.artifactId}-${project.version}</name>
+    <description>Demo project for XXX</description>
 
-	</dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+            <version>0.14.2</version>
+            <!-- 			<type>pom</type> -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>

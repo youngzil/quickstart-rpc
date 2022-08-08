@@ -1,137 +1,140 @@
 <?xml version="1.0"?>
 <project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.quickstart</groupId>
-		<artifactId>quickstart-rpc</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<groupId>org.quickstart</groupId>
-	<artifactId>quickstart-finagle</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>quickstart-rpc-finagle</name>
-	<url>http://maven.apache.org</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<project.encoding>UTF-8</project.encoding>
-		<java.version>1.8</java.version>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<scalaVersion>2.12.0</scalaVersion>
-		<scalaBinaryVersion>2.12</scalaBinaryVersion>
-		<spring.boot.version>1.5.2.RELEASE</spring.boot.version>
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <parent>
+        <groupId>org.quickstart</groupId>
+        <artifactId>quickstart-rpc</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.quickstart</groupId>
+    <artifactId>quickstart-finagle</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}-${project.version}</name>
+    <url>http://maven.apache.org</url>
+    <description>Demo project for XXX</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.encoding>UTF-8</project.encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <scalaVersion>2.12.0</scalaVersion>
+        <scalaBinaryVersion>2.12</scalaBinaryVersion>
+        <spring.boot.version>1.5.2.RELEASE</spring.boot.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.twitter/finagle-http -->
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>finagle-http_2.12</artifactId>
+            <version>18.5.0</version>
+        </dependency>
 
 
-	</properties>
-	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.twitter/finagle-http -->
-		<dependency>
-			<groupId>com.twitter</groupId>
-			<artifactId>finagle-http_2.12</artifactId>
-			<version>18.5.0</version>
-		</dependency>
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>finagle-thrift_2.12</artifactId>
+            <version>18.5.0</version>
+        </dependency>
 
 
-		<dependency>
-			<groupId>com.twitter</groupId>
-			<artifactId>finagle-thrift_2.12</artifactId>
-			<version>18.5.0</version>
-		</dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scalaVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang.modules</groupId>
+            <artifactId>scala-xml_${scalaBinaryVersion}</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang.modules</groupId>
+            <artifactId>scala-parser-combinators_${scalaBinaryVersion}</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+    </dependencies>
 
 
+    <build>
+        <plugins>
 
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-library</artifactId>
-			<version>${scalaVersion}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang.modules</groupId>
-			<artifactId>scala-xml_${scalaBinaryVersion}</artifactId>
-			<version>1.0.6</version>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang.modules</groupId>
-			<artifactId>scala-parser-combinators_${scalaBinaryVersion}</artifactId>
-			<version>1.0.6</version>
-		</dependency>
-
-	</dependencies>
-
-
-	<build>
-		<plugins>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>${maven.compiler.source}</source>
-					<target>${maven.compiler.target}</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.0.2</version>
-				<configuration>
-					<encoding>${project.build.sourceEncoding}</encoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>net.alchim31.maven</groupId>
-				<artifactId>scala-maven-plugin</artifactId>
-				<version>3.2.1</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>compile</goal>
-							<goal>testCompile</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<args>
-						<!-- work-around for https://issues.scala-lang.org/browse/SI-8358 -->
-						<arg>-nobootcp</arg>
-					</args>
-				</configuration>
-			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <args>
+                        <!-- work-around for https://issues.scala-lang.org/browse/SI-8358 -->
+                        <arg>-nobootcp</arg>
+                    </args>
+                </configuration>
+            </plugin>
 
 
-			<plugin>
-				<groupId>com.twitter</groupId>
-				<artifactId>scrooge-maven-plugin</artifactId>
-				<version>4.18.0</version>
-				<configuration>
-					<language>scala</language>
-					<thriftOpts>
-						<thriftOpt>--finagle</thriftOpt>
-					</thriftOpts>
-				</configuration>
-				<executions>
-					<execution>
-						<id>thrift-sources</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>thrift-test-sources</id>
-						<phase>generate-test-sources</phase>
-						<goals>
-							<goal>testCompile</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+            <plugin>
+                <groupId>com.twitter</groupId>
+                <artifactId>scrooge-maven-plugin</artifactId>
+                <version>4.18.0</version>
+                <configuration>
+                    <language>scala</language>
+                    <thriftOpts>
+                        <thriftOpt>--finagle</thriftOpt>
+                    </thriftOpts>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>thrift-sources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>thrift-test-sources</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
