@@ -24,3 +24,45 @@ gRPC 默认使用 protocol buffers 作为接口定义语言，来描述服务接
 
 [【RPC基础系列3】gRPC简单示例](https://juejin.cn/post/6985132929437417479)
 [go-grpc-demo](https://github.com/zlingqu/go-grpc-demo)
+
+
+
+
+
+
+
+
+
+## Protocol Buffers
+
+[Protocol Buffers的网站](https://developers.google.com/protocol-buffers)  
+[proto3文档信息](https://developers.google.com/protocol-buffers/docs/proto3)  
+[Protocol Buffers的Github网站](https://github.com/protocolbuffers/protobuf)  
+
+
+[java指导教程](https://developers.google.com/protocol-buffers/docs/javatutorial)  
+[java环境安装](https://github.com/protocolbuffers/protobuf/tree/main/java)  
+
+
+
+Protocol Buffers - Google's data interchange format（Google的数据交换格式 ）
+
+Protocol Buffer (简称Protobuf) 是Google出品的性能优异、跨语言、跨平台的序列化库。
+
+序列化(serialization、marshalling)的过程是指将数据结构或者对象的状态转换成可以存储(比如文件、内存)或者传输的格式(比如网络)。反向操作就是反序列化(deserialization、unmarshalling)的过程。
+
+
+Protocol Buffers（简称：ProtoBuf）是一种开源跨平台的序列化资料结构的协议。其对于储存资料或在网络上进行通讯的程式是很有用的。这个方法包含一个接口描述语言，描述一些资料结构，并提供程式工具根据这些描述产生程式码，这些代码将用来生成或解析代表这些数据结构的字节流。
+
+Google最初开发了Protocol Buffers用于内部使用。Protocol Buffers的设计目标是简单和性能。特别地，它被设计地与XML相比更小且更快。
+
+Protocol Buffers在Google内被广泛用来存储和交换各种类型的结构化数据。在Google，它被当作一个RPC系统的基础，并被用于几乎所有的跨服务器通信。
+
+Protocol Buffers和Apache Thrift和Ion等协议很相似，同时也提供了一个RPC协议栈gRPC来给上层服务使用。
+
+
+
+
+
+
+

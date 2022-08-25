@@ -1,3 +1,15 @@
+启动zookeeper
+
+docker pull zookeeper
+
+docker run -d -e TZ="Asia/Shanghai" -p 2181:2181 --name zookeeper --restart always zookeeper
+
+
+
+
+
+
+
 Dubbo
 
 [Dubbo官网](https://dubbo.apache.org/zh/)  
@@ -17,6 +29,13 @@ http://blog.csdn.net/flashflight/article/details/43939275
 
 https://blog.csdn.net/sucess_zhang/article/details/78839790
 https://blog.csdn.net/frankchina/article/category/6224443
+
+[Dubbo 一篇文章就够了：从入门到实战](https://segmentfault.com/a/1190000019896723)  
+[]()  
+[]()  
+[]()  
+[]()  
+[]()  
 
 
 
