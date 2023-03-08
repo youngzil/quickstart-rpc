@@ -16,7 +16,7 @@
     <description>Demo project for XXX</description>
 
     <properties>
-        <dubbo.version>3.0.10</dubbo.version>
+        <dubbo.version>3.0.13</dubbo.version>
         <curator.version>4.3.0</curator.version>
     </properties>
 
